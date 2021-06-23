@@ -1,9 +1,6 @@
 ### Hi there, I'm Victor Vorobev 👋
 [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/victor-vorobev-7281b016b/)
 
-
-[![visitors](https://visitor-badge.glitch.me/badge?page_id=victorvorobev)](https://visitor-badge.glitch.me/#d)
-
 I am an experienced developer that's ready to do pretty much everything and ready to try things that he never did before!
 
 - 💬 Ask me about anything, and we both might know something new!
@@ -25,3 +22,5 @@ I am an experienced developer that's ready to do pretty much everything and read
 
 
 *Everything here looks kinda rough, but I have to start somewhere, right?*
+
+[![visitors](https://visitor-badge.glitch.me/badge?page_id=victorvorobev)](https://visitor-badge.glitch.me/#d)
