@@ -19,6 +19,9 @@ I am an experienced developer that's ready to do pretty much everything and read
 
 **My stats**  
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=victorvorobev)](https://github.com/anuraghazra/github-readme-stats)
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=victorvorobev)](https://git.io/streak-stats)
+[![Leetcode Stats](https://leetcode.card.workers.dev/?username=victorvorobev&extension=activity)](https://github.com/JacobLinCool/LeetCode-Stats-Card)
+
 
 
 *Everything here looks kinda rough, but I have to start somewhere, right?*
