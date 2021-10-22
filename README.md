@@ -4,7 +4,6 @@
 I am an experienced developer that's ready to do pretty much everything and ready to try things that he never did before!
 
 - 💬 Ask me about anything, and we both might know something new!
-- I'm adding this line to remove it later for hacktoberfest. I'm a bad person, but it's my first one. I promise not to do that any more.  
   
 
 **Languages and Tools**  
