@@ -1,6 +1,6 @@
 ### Hi there, I'm Victor Vorobev 👋
 [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/victor-vorobev-7281b016b/)
-[![](https://img.shields.io/badge/CV-00A98F?style=for-the-badge&logo=About.me&logoColor=white)](https://github.com/victorvorobev/victorvorobev/blob/main/Victor%20Vorobev%20CV.pdf)
+[![](https://img.shields.io/badge/CV-00A98F?style=for-the-badge&logo=About.me&logoColor=white)](https://drive.google.com/file/d/1EvJxibHP0RSxPiSMsPvqAUlQ1C1uT8MN/view?usp=sharing)
 
 I am an experienced developer that's ready to do pretty much everything and ready to try things that he never did before!
 
