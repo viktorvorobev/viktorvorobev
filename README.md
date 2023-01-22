@@ -1,5 +1,5 @@
-### Hi there, I'm Victor Vorobev 👋
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/victor-vorobev-7281b016b/)
+### Hi there, I'm Viktor Vorobev 👋
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mr-viktor-vorobev/)
 [![](https://img.shields.io/badge/CV-00A98F?style=for-the-badge&logo=About.me&logoColor=white)](https://drive.google.com/file/d/1EvJxibHP0RSxPiSMsPvqAUlQ1C1uT8MN/view?usp=sharing)
 
 I am an experienced developer that's ready to do pretty much everything and ready to try things that he never did before!
@@ -21,6 +21,6 @@ I am an experienced developer that's ready to do pretty much everything and read
   
 
 **My stats**  
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=victorvorobev)](https://github.com/anuraghazra/github-readme-stats)
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=victorvorobev)](https://git.io/streak-stats)
-[![Leetcode Stats](https://leetcode.card.workers.dev/?username=victorvorobev&extension=activity)](https://github.com/JacobLinCool/LeetCode-Stats-Card)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=viktorvorobev&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=viktorvorobev)](https://git.io/streak-stats)
+[![Leetcode Stats](https://leetcard.jacoblin.cool/viktorvorobev?ext=activity)](https://github.com/JacobLinCool/LeetCode-Stats-Card)
