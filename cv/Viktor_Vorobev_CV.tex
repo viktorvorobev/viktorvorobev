@@ -1,0 +1,146 @@
+\documentclass[10pt]{article}
+%\usepackage{showframe}	% for deebug purposes
+\usepackage{extsizes} % so 9pt can be used for general font size
+\pagestyle{empty}    % remove page counter
+
+\usepackage{geometry}    % page geometry
+\geometry{a4paper, left=20mm, right=30mm, top=15mm}
+
+\usepackage{hyperref} % colored hyperlinks
+\hypersetup{colorlinks=true,urlcolor=cyan} % color clickable stuff cyan
+
+\usepackage{enumitem}    % for pretty lists
+\setlist{noitemsep, align=right, leftmargin=1em, topsep=0pt}
+
+\renewcommand{\familydefault}{\sfdefault}
+% set global font to sans serif family
+\setlength\parindent{0pt}    % remove paragraph indent
+
+\usepackage{titlesec}    % for correct header sizes
+\titleformat
+{\section}    % command
+{\fontsize{14pt}{14pt}\bfseries} % format
+{\thesection} % label
+{1em}    % separation
+{}
+\titleformat
+{\subsection} % command
+{\fontsize{11pt}{6pt}\bfseries} % format
+{\thesubsection} % label
+{1em}    % separation
+{}
+
+\titlespacing\section{0pt}{0pt}{10pt}
+\titlespacing\subsection{0pt}{10pt}{0pt}
+
+\usepackage{xcolor}    % to use gray color
+\usepackage{fontawesome}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+\newcommand{\lmvalue}{5mm}
+\newcommand{\rmvalue}{0mm}
+
+\begin{document}
+
+    \begin{minipage}{0.78\linewidth}
+    {\fontsize{28pt}{28pt}\selectfont Viktor Vorobev}
+        \\[1em]
+        {\color{gray}\fontsize{16pt}{16pt}\selectfont Software Developer}
+    \end{minipage}
+    \hfill%
+    \begin{minipage}{0.24\linewidth}
+        \begin{flushleft}
+            \begin{itemize}
+                \item[\color{cyan}\faEnvelope] \href{mailto:vikeyer@gmail.com}{vikeyer@gmail.com}
+                \item[\color{cyan}\faGithub] \href{https://github.com/viktorvorobev}{viktorvorobev}
+                \item[\color{cyan}\faLinkedin] \href{https://www.linkedin.com/in/mr-viktor-vorobev/}{mr-viktor-vorobev}
+                \item[\faBuildingO] Belgrade, Serbia
+            \end{itemize}
+        \end{flushleft}
+    \end{minipage}
+
+    \vspace{3mm}
+    \section*{Summary}
+    \begin{changemargin}{\lmvalue}{\rmvalue}
+        5 years in the field of commercial products.
+        Happy to make customers happy and solve their problems.
+        Keen on learning new technologies and take the best of their approaches.
+        Technologies I'm familiar with:\\
+        Python, Flask, pytest, Socket.IO, REST, Redis, Bash, GIT, Linux,
+        Docker, Yocto, TypeScript, VUE, C++.
+    \end{changemargin}
+
+    \section*{Work experience}
+    \begin{changemargin}{\lmvalue}{\rmvalue}
+        \subsection*{System Software Developer \hfill {\color{gray}Dec 2018 –
+        Present}}
+        \href{https://emlid.com}{Emlid}
+
+        Backend development for embedded devices.
+        Mostly Python (Flask), bash scripts, Redis.
+        Creating Systemd services.
+        Setup simple CI pipelines using Travis and GitHub actions.
+        Design and implementation of REST and SocketIO APIs.
+        \begin{itemize}
+            \item Hunted down and fixed several memory leaks and CPU hungry
+            processes
+            \item Significantly improved stability of the newly produced
+            code by covering existing systems with tests
+            \item Started process of writing documentation for API of the
+            codebase
+            \item Implemented and reworked configuration applying
+            mechanisms which allowed piece-by-piece changes, instead of applying the whole
+            configuration at once.
+            This opened a way for complete rework of the user applications
+            \item Implemented tests for internal migrations' system, and
+            then managed to reduce amount of required tests from more than 100 to just 8
+            \item Learned different languages (JavaScript, TypeScript) when
+            it was necessary for the team.
+            Successfully implemented new features using them
+        \end{itemize}
+
+        \subsection*{Developer \hfill {\color{gray}Jun 2015 – Dec 2018}}
+        \href{https://er.rtc.ru/en/}{Russian State Scientific Center for
+        Robotics and Technical Cybernetics}
+        \begin{itemize}
+            \item Developed
+            \href{https://github.com/RTC-SCTB/cuptimer}{Timer} - Python 3 application for
+            Linux (Raspbian, Ubuntu), which was used later in the contest "RTC~Cup"
+            \item Developed Python 3 module using C++, which allows getting
+            data from flight controller Naza M v2 through CAN~interface (It's
+            \href{https://github.com/viktorvorobev/NazaCanDecoder}{open source} now)
+            \item Developed and programmed several robotic platforms for
+            rough terrain, and \href{https://rtc.ru/solution/agro-robot/}{educational platforms}
+        \end{itemize}
+
+        \subsection*{Engineer \hfill {\color{gray}Sep 2016 – Jun 2018}}
+        \href{https://en.itmo.ru/}{ITMO University}
+        \begin{itemize}
+            \item Took part in the development team of a mobile robotic
+            platform designed for remote inspection of industrial premises.
+            Engaged in the development of a controller for BLDC motors.
+            The task included obtaining data from encoders, and PID speed control based on them
+        \end{itemize}
+    \end{changemargin}
+
+    \section*{Education}
+    \begin{changemargin}{\lmvalue}{\rmvalue}
+        \subsection*{Master's Degree \hfill {\color{gray}2016 – 2018}}
+        \href{https://en.itmo.ru/}{ITMO University}
+        \begin{itemize}
+            \item Faculty of Control Systems and Robotics.
+            Degree program of Digital control in modern technics
+            \item Diploma with Honors
+            \item GPA 4.8 of 5
+        \end{itemize}
+
+        \subsection*{Bachelor's Degree \hfill {\color{gray}2012 – 2016}}
+        \href{https://en.itmo.ru/}{ITMO University}
+        \begin{itemize}
+            \item Faculty of Control Systems and Robotics.
+            Degree program of Control in technical systems
+            \item GPA 4.76 of 5
+        \end{itemize}
+    \end{changemargin}
+\end{document}
