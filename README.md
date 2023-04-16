@@ -1,8 +1,10 @@
 ### Hi there, I'm Viktor Vorobev 👋
 [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mr-viktor-vorobev/)
-[![](https://img.shields.io/badge/CV-00A98F?style=for-the-badge&logo=About.me&logoColor=white)](https://drive.google.com/file/d/1EvJxibHP0RSxPiSMsPvqAUlQ1C1uT8MN/view?usp=sharing)
+[![](https://img.shields.io/badge/CV-00A98F?style=for-the-badge)](https://drive.google.com/file/d/1e45Z14JU7wt4H0zuaQfNd0Xz4Yu0q1h-/view?usp=share_link)
 
 I am an experienced developer that's ready to do pretty much everything and ready to try things that he never did before!
+
+Check this out, even [my CV](https://drive.google.com/file/d/1e45Z14JU7wt4H0zuaQfNd0Xz4Yu0q1h-/view?usp=share_link) is compiled with [GitHub Workflow](https://github.com/viktorvorobev/viktorvorobev/blob/main/.github/workflows/build-cv.yaml)!
 
 - 💬 Ask me about anything, and we both might know something new!
   
