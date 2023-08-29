@@ -16,15 +16,19 @@ jobs:
       - name: Set up Git repository 
         uses: actions/checkout@v3
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with:
-          root_file: ./cv/Viktor_Vorobev_CV.tex
+          root_file: | 
+            ./cv/Viktor_Vorobev_CV.tex
+            ./cv/Viktor_Vorobev_Cover_Letter.tex
       - name: Upload PDF file artifact to GitHub
         if: ${{ github.event_name != 'push' }}
         uses: actions/upload-artifact@v3
         with:
           name: Viktor Vorobev CV
-          path: Viktor_Vorobev_CV.pdf
+          path: |
+            Viktor_Vorobev_CV.pdf
+            Viktor_Vorobev_Cover_Letter.pdf
       - name: Set up Python
         if: ${{ github.event_name == 'push' }}
         uses: actions/setup-python@v4
@@ -45,3 +49,4 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         run: |
           python scripts/upload_file.py --folder_id ${{ secrets.GOOGLE_DRIVE_CV_FOLDER_ID }} --file_name Viktor_Vorobev_CV.pdf
+          python scripts/upload_file.py --folder_id ${{ secrets.GOOGLE_DRIVE_CV_FOLDER_ID }} --file_name Viktor_Vorobev_Cover_Letter.pdf
