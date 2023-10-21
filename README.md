@@ -16,6 +16,8 @@ with [GitHub Workflow](https://github.com/viktorvorobev/viktorvorobev/blob/main/
 
 - I like ASCII art and console UI, so here are some [console games](https://github.com/viktorvorobev/pygames)
 - I also [know algorithms a bit](https://github.com/viktorvorobev/algo_practice)
+- Home assignments that I've successfully completed:
+  - [Websites status monitor](https://github.com/viktorvorobev/home_assignment_0): asyncio, PostgreSQL 
 
 ### Languages and Tools
 
