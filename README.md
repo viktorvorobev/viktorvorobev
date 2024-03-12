@@ -17,7 +17,7 @@ with [GitHub Workflow](https://github.com/viktorvorobev/viktorvorobev/blob/main/
 - I like ASCII art and console UI, so here are some [console games](https://github.com/viktorvorobev/pygames)
 - I also [know algorithms a bit](https://github.com/viktorvorobev/algo_practice)
 - Home assignments that I've successfully completed:
-  - [Websites status monitor](https://github.com/viktorvorobev/home_assignment_0): asyncio, PostgreSQL 
+    - [Websites status monitor](https://github.com/viktorvorobev/home_assignment_0): asyncio, PostgreSQL
 
 ### Languages and Tools
 
@@ -35,6 +35,17 @@ with [GitHub Workflow](https://github.com/viktorvorobev/viktorvorobev/blob/main/
 
 ### My stats
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=viktorvorobev&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=viktorvorobev&count_private=true&show_icons=true&card_width=500&theme=dark&border_color=30363d"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=viktorvorobev&count_private=true&show_icons=true&card_width=500"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api?username=viktorvorobev&count_private=true&show_icons=true&card_width=500" />
+</picture>
+
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=viktorvorobev)](https://git.io/streak-stats)
 [![Leetcode Stats](https://leetcard.jacoblin.cool/viktorvorobev?ext=activity)](https://github.com/JacobLinCool/LeetCode-Stats-Card)
