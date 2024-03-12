@@ -57,5 +57,14 @@ with [GitHub Workflow](https://github.com/viktorvorobev/viktorvorobev/blob/main/
   />
   <img src="http://github-readme-streak-stats.herokuapp.com?user=viktorvorobev&card_width=500" />
 </picture>
-
-[![Leetcode Stats](https://leetcard.jacoblin.cool/viktorvorobev?ext=activity)](https://github.com/JacobLinCool/LeetCode-Stats-Card)
+<picture>
+  <source
+    srcset="https://leetcard.jacoblin.cool/viktorvorobev?ext=activity&width=500&theme=dark"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://leetcard.jacoblin.cool/viktorvorobev?ext=activity&width=500"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://leetcard.jacoblin.cool/viktorvorobev?ext=activity&width=500" />
+</picture>
