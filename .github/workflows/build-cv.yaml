@@ -21,6 +21,8 @@ jobs:
           root_file: | 
             ./cv/Viktor_Vorobev_CV.tex
             ./cv/Viktor_Vorobev_Cover_Letter.tex
+        env:
+            TEXINPUTS: ".:./cv//:"
       - name: Upload PDF file artifact to GitHub
         if: ${{ github.event_name != 'push' }}
         uses: actions/upload-artifact@v4
