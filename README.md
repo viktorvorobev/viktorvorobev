@@ -17,7 +17,7 @@ with [GitHub Workflow](https://github.com/viktorvorobev/viktorvorobev/blob/main/
 - I like ASCII art and console UI, so here are some [console games](https://github.com/viktorvorobev/pygames)
 - I also [know algorithms a bit](https://github.com/viktorvorobev/algo_practice)
 - Home assignments that I've successfully completed:
-    - [Websites status monitor](https://github.com/viktorvorobev/home_assignment_0): asyncio, PostgreSQL
+  - [Websites status monitor](https://github.com/viktorvorobev/home_assignment_0): asyncio, PostgreSQL
 
 ### Languages and Tools
 
@@ -32,39 +32,3 @@ with [GitHub Workflow](https://github.com/viktorvorobev/viktorvorobev/blob/main/
 ![TMUX](https://img.shields.io/badge/tmux-1BB91F?style=for-the-badge&logo=tmux&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![VUE](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
-
-### My stats
-
-<picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=viktorvorobev&count_private=true&show_icons=true&card_width=500&theme=dark&border_color=30363d"
-    media="(prefers-color-scheme: dark)"
-  />
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=viktorvorobev&count_private=true&show_icons=true&card_width=500"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="https://github-readme-stats.vercel.app/api?username=viktorvorobev&count_private=true&show_icons=true&card_width=500" />
-</picture>
-<picture>
-  <source
-    srcset="http://github-readme-streak-stats.herokuapp.com?user=viktorvorobev&card_width=500&theme=dark&border=30363d"
-    media="(prefers-color-scheme: dark)"
-  />
-  <source
-    srcset="http://github-readme-streak-stats.herokuapp.com?user=viktorvorobev&card_width=500"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="http://github-readme-streak-stats.herokuapp.com?user=viktorvorobev&card_width=500" />
-</picture>
-<picture>
-  <source
-    srcset="https://leetcard.jacoblin.cool/viktorvorobev?ext=activity&width=500&theme=dark"
-    media="(prefers-color-scheme: dark)"
-  />
-  <source
-    srcset="https://leetcard.jacoblin.cool/viktorvorobev?ext=activity&width=500"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="https://leetcard.jacoblin.cool/viktorvorobev?ext=activity&width=500" />
-</picture>
