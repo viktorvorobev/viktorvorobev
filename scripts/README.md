@@ -24,6 +24,14 @@ This is a helper script that allows you to upload files to a Google Drive using 
    ```bash
    python upload_file.py --folder_id $FOLDER_ID --file_name example.txt
    ```
+
+## Run script
+
+1. [Get `uv`](https://docs.astral.sh/uv/getting-started/installation/)
+2. Run script
+   ```bash
+   uv run upload_file.py --folder_id $FOLDER_ID --file_name example.txt
+   ```
    Where `$FOLDER_ID` can be get from the URL to the Google Drive.
    E.g. for `https://drive.google.com/drive/u/0/folders/1Ug82tk8ilDiITHGsjtmDHC3dGtz97IIo`
    the folder ID would be `1Ug82tk8ilDiITHGsjtmDHC3dGtz97IIo`
