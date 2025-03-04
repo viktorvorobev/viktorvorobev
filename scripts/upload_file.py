@@ -1,3 +1,9 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "pydrive2",
+# ]
+# ///
 import argparse
 import logging
 import sys
