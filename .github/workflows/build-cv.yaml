@@ -31,17 +31,11 @@ jobs:
           path: |
             Viktor_Vorobev_CV.pdf
             Viktor_Vorobev_Cover_Letter.pdf
-      - name: create-json
-        id: create-json
-        uses: jsdaniell/create-json@v1.2.3
-        with:
-          name: "credentials.json"
-          json: ${{ secrets.GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON }}
       - name: Install uv
         if: ${{ github.event_name == 'push' }}
         uses: astral-sh/setup-uv@v7
       - name: Upload CV to Google Drive
         if: ${{ github.event_name == 'push' }}
         run: |
-          uv run scripts/upload_file.py --folder_id ${{ secrets.GOOGLE_DRIVE_CV_FOLDER_ID }} --file_name Viktor_Vorobev_CV.pdf
-          uv run scripts/upload_file.py --folder_id ${{ secrets.GOOGLE_DRIVE_CV_FOLDER_ID }} --file_name Viktor_Vorobev_Cover_Letter.pdf
+          uv run scripts/upload_file.py --file_name Viktor_Vorobev_CV.pdf --folder_id '${{ secrets.GOOGLE_DRIVE_CV_FOLDER_ID }}' --credentials_json '${{ secrets.GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON }}'
+          uv run scripts/upload_file.py --file_name Viktor_Vorobev_Cover_Letter.pdf --folder_id '${{ secrets.GOOGLE_DRIVE_CV_FOLDER_ID }}' --credentials_json '${{ secrets.GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON }}'
