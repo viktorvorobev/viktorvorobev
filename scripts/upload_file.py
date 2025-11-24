@@ -5,6 +5,7 @@
 # ]
 # ///
 import argparse
+import json
 import logging
 import sys
 
@@ -40,16 +41,21 @@ def parse_args():
         required=True,
         help="File name that will be updated/uploaded to the Google Drive",
     )
+    parser.add_argument(
+        "--credentials_json",
+        required=True,
+        help="Credentials as a JSON string",
+    )
     return parser.parse_args()
 
 
-def authenticate() -> GoogleDrive:
+def authenticate(credentials: dict) -> GoogleDrive:
     logger.info("Authenticating to Google Drive")
     try:
         gauth = GoogleAuth()
         gauth.auth_method = "service"
-        gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name(
-            "credentials.json", ["https://www.googleapis.com/auth/drive"]
+        gauth.credentials = ServiceAccountCredentials.from_json_keyfile_dict(
+            credentials, ["https://www.googleapis.com/auth/drive"]
         )
         drive = GoogleDrive(gauth)
     except Exception as err:
@@ -95,8 +101,15 @@ def upload_updated_file(file: GoogleDriveFile, file_name: str) -> None:
 
 if __name__ == "__main__":
     args = parse_args()
+
     try:
-        gdrive = authenticate()
+        credentials = json.loads(args.credentials_json)
+    except json.JSONDecodeError as err:
+        logger.error("Failed to parse credentials JSON. %s: %s", err.__class__.__name__, err)
+        sys.exit(1)
+
+    try:
+        gdrive = authenticate(credentials=credentials)
         cv_file = get_file(gdrive, folder_id=args.folder_id, file_name=args.file_name)
         upload_updated_file(cv_file, file_name=args.file_name)
     except FileUploadError as err:
