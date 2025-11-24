@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository 
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v3
+        uses: xu-cheng/latex-action@v4
         with:
           root_file: | 
             ./cv/Viktor_Vorobev_CV.tex
@@ -25,7 +25,7 @@ jobs:
             TEXINPUTS: ".:./cv//:"
       - name: Upload PDF file artifact to GitHub
         if: ${{ github.event_name != 'push' }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Viktor Vorobev CV
           path: |
@@ -39,7 +39,7 @@ jobs:
           json: ${{ secrets.GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON }}
       - name: Install uv
         if: ${{ github.event_name == 'push' }}
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v7
       - name: Upload CV to Google Drive
         if: ${{ github.event_name == 'push' }}
         run: |
