@@ -38,4 +38,7 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         run: |
           uv run scripts/upload_file.py --file_name Viktor_Vorobev_CV.pdf --folder_id '${{ secrets.GOOGLE_DRIVE_CV_FOLDER_ID }}' --credentials_json '${{ secrets.GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON }}'
+      - name: Upload Cover Letter to Google Drive
+        if: ${{ github.event_name == 'push' }}          
+        run: |
           uv run scripts/upload_file.py --file_name Viktor_Vorobev_Cover_Letter.pdf --folder_id '${{ secrets.GOOGLE_DRIVE_CV_FOLDER_ID }}' --credentials_json '${{ secrets.GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON }}'
