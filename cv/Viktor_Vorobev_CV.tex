@@ -1,149 +1,134 @@
-\documentclass[10pt]{article}
-%\usepackage{showframe}	% for deebug purposes
-\usepackage{extsizes} % so 9pt can be used for general font size
-\pagestyle{empty}    % remove page counter
+\documentclass[letterpaper,10pt]{article}
 
-\usepackage{geometry}    % page geometry
-\geometry{a4paper, left=20mm, right=30mm, top=15mm, bottom=15mm}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
-\usepackage{hyperref} % colored hyperlinks
-\hypersetup{colorlinks=true,urlcolor=cyan} % color clickable stuff cyan
+% Font options
+\usepackage[sfdefault]{roboto}  % Sans-serif font
 
-\usepackage{enumitem}    % for pretty lists
-\setlist{noitemsep, align=right, leftmargin=1em, topsep=0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-\renewcommand{\familydefault}{\sfdefault}
-% set global font to sans serif family
-\setlength\parindent{0pt}    % remove paragraph indent
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
-\usepackage{titlesec}    % for correct header sizes
-\titleformat
-{\section}    % command
-{\fontsize{14pt}{14pt}\bfseries} % format
-{\thesection} % label
-{1em}    % separation
-{}
-\titleformat
-{\subsection} % command
-{\fontsize{11pt}{6pt}\bfseries} % format
-{\thesubsection} % label
-{1em}    % separation
-{}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
-\titlespacing\section{0pt}{0pt}{10pt}
-\titlespacing\subsection{0pt}{10pt}{0pt}
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
 
-\usepackage{xcolor}    % to use gray color
-\usepackage{fontawesome}
+% Ensure PDF is machine readable
+\pdfgentounicode=1
 
-\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
-\let\endchangemargin=\endlist
-\newcommand{\lmvalue}{5mm}
-\newcommand{\rmvalue}{0mm}
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 \begin{document}
 
-\begin{minipage}[b]{0.78\linewidth}
-	{\fontsize{28pt}{28pt}\selectfont Viktor Vorobev}
-	\\[1em]
-	{\color{gray}\fontsize{16pt}{16pt}\selectfont Senior Software Developer}
-\end{minipage}
-\hfill%
-\begin{minipage}[b]{0.24\linewidth}
-	\begin{flushleft}
-		\begin{itemize}
-			\item[\color{cyan}\faEnvelope] \href{mailto:vikeyer@gmail.com}{vikeyer@gmail.com}
-			\item[\color{cyan}\faGithub] \href{https://github.com/viktorvorobev}{viktorvorobev}
-			\item[\color{cyan}\faLinkedin] \href{https://www.linkedin.com/in/mr-viktor-vorobev/}{mr-viktor-vorobev}
-			\item[\faBuildingO] Budapest, Hungary
-		\end{itemize}
-	\end{flushleft}
-\end{minipage}
-\vspace{3mm}
+\begin{center}
+	\textbf{\Huge Viktor Vorobev} \\
+	\small\href{mailto:vikeyer@gmail.com}{vikeyer@gmail.com} $|$
+	\href{https://linkedin.com/in/mr-viktor-vorobev/}{linkedin.com/in/mr-viktor-vorobev} $|$
+	\href{https://github.com/viktorvorobev}{github.com/viktorvorobev}
+\end{center}
+
 \section*{Summary}
-\begin{changemargin}{\lmvalue}{\rmvalue}
-	10 years in the field of commercial products.
-	Happy to make customers happy and solve their problems.\\
-	Will always do my best to help my team and make sure that the quality of our product is as good as possible.
-	You give me a task, I get it done.
-\end{changemargin}
-\section*{Technologies}
-\begin{changemargin}{\lmvalue}{\rmvalue}
-	Python, Flask, Django, asyncio, FastAPI, pytest, Socket.IO, REST, Redis, Bash, GIT, Linux,
-	Docker, Yocto, TypeScript, VUE, C, C++.
-\end{changemargin}
-\section*{Work experience}
-\begin{changemargin}{\lmvalue}{\rmvalue}
-	\subsection*{System Software Tech Lead at \href{https://emlid.com}{Emlid}
-		\hfill {\color{gray}Dec 2023 – Present}}
-	Fullstack development of services and web interfaces running on the embedded devices.
-	Managing a team of 3 developers.\\
-	\textbf{Technologies:} Python, Flask, Bash, C++, TypeScript, VUE, Redis, GitHub actions, REST, Socket.IO\@.
-	\begin{itemize}
-		\item Responsible for planning of the new features and cross-team communication
-		\item Improved internal and cross-team documentation
-		\item Started an internal conference to help with cross-team communications and knowledge preservation
-		\item Developing new features with Python, C++ and TypeScript+VUE
-	\end{itemize}
-	\subsection*{Senior Software Developer at \href{https://emlid.com}{Emlid}
-		\hfill {\color{gray}Dec 2018 – Dec 2023}}
-	Fullstack development of services and web interfaces running on the embedded devices.\\
-	\textbf{Technologies:} Python, Flask, Bash, C++, TypeScript, VUE, Redis, GitHub actions, REST, Socket.IO\@.
-	\begin{itemize}
-		\item Hunted down and fixed several memory leaks and CPU hungry processes
-		\item Increased coverage of the code with the tests from 50\% to 90\%
-		\item Wrote the documentation for the API of the codebase, responsible for supporting it
-		\item Implemented tests for internal migrations' system, and then managed to reduce amount of required tests from more than 100 to just 8
-		\item Created basic UI for internal web services to make it easier to use by the other teams
-	\end{itemize}
+10 years in the field of commercial products. Can get the things done. \\
+Keen on solution-oriented approach to the problems. Able to work both independently and in a team.\\
+Strong believer in tests and documentation as a way to make software more reliable and maintainable.\\
 
-	\subsection*{Python Developer at \href{https://www.linkedin.com/company/fintech-iq/}{Fintech IQ}
-		\hfill {\color{gray}Apr 2023 – Jun 2024}}
+\section{Technical Skills}
+\resumeSubHeadingList
+\resumeItem{\textbf{Programming Languages}: Python, C/C++, TypeScript, Bash}
+\resumeItem{\textbf{Libraries \& Tools}: Flask, Django, asyncio, FastAPI, pytest, Socket.IO, Redis, GIT, Linux,
+	Docker, Yocto, VUE}
+\resumeSubHeadingListEnd
 
-	Backend development of services used in financial organization.\\
-	\textbf{Technologies:} Python, asyncio, FastAPI, MongoDB, RabbitMQ, gRPC.\@
-	\begin{itemize}
-		\item Improved stability of several services by reworking the blocking calls in asynchronous code
-		\item Designed several services communicating through gRPC from scratch with 100\% tests coverage
-	\end{itemize}
+\section{Experience}
+\resumeSubHeadingList
+\resumeSubheading
+{System Software Tech Lead}{Dec 2023 -- Present}
+{Emlid}{Budapest, Hungary}
+\resumeSubHeadingList
+\resumeItem{\textbullet\ Responsible for planning of the new features and cross-team communication}
+\resumeItem{\textbullet\ Lead a team through the development of the new flagship company product -- Reach RS4 and Reach RS4 Pro}
+\resumeItem{\textbullet\ Started an internal conference to help with cross-team communications and knowledge preservation}
+\resumeSubHeadingListEnd
 
-	\subsection*{Developer at \href{https://er.rtc.ru/en/}{RTC}
-		\hfill {\color{gray}Jun 2015 – Dec 2018}}
+\resumeSubheading
+{Senior Software Developer}{Dec 2018 -- Dec 2023}
+{Emlid}{Budapest, Hungary}
+\resumeSubHeadingList
+\resumeItem{\textbullet\ Hunted down and fixed several memory leaks and CPU hungry processes}
+\resumeItem{\textbullet\ Increased coverage of the code with the tests from 50\% to 90\%}
+\resumeItem{\textbullet\ Wrote the documentation for the API of the codebase for other teams to use}
+\resumeItem{\textbullet\ Created UI for internal web services to make it easier to use by the other teams}
+\resumeItem{\textbullet\ Reduced the amount of required tests for internal migrations' system from more than 100 to just 8}
+\resumeSubHeadingListEnd
 
-	Developed Python module using C++, which allows getting data from flight controller Naza~M~v2 through
-	CAN~interface (It's \href{https://github.com/viktorvorobev/NazaCanDecoder}{open~source} now)
+\resumeSubheading
+{Python Developer}{Apr 2023 -- Jun 2024}
+{Fintech IQ}{Remote}
+\resumeSubHeadingList
+\resumeItem{\textbullet\ Improved stability of several services by reworking the blocking calls in asynchronous code}
+\resumeItem{\textbullet\ Designed several services communicating through gRPC from scratch with 100\% tests coverage}
+\resumeItem{\textbullet\ Reduced response time of the OCR service than 20 seconds (and higher) to stable 10 seconds despite the workload}
+\resumeSubHeadingListEnd
 
-	\subsection*{Engineer at \href{https://en.itmo.ru/}{ITMO University}
-		\hfill {\color{gray}Sep 2016 – Jun 2018}}
+\resumeSubheading
+{Developer}{Jun 2015 -- Dec 2018}
+{RTC}{}
+\resumeSubHeadingList
+\resumeItem{Developed Python module using C++, which allows getting data from flight controller Naza~M~v2 through CAN~interface.}
+\resumeItem{It's open~source now: \href{https://github.com/viktorvorobev/NazaCanDecoder}{github.com/viktorvorobev/NazaCanDecoder}}
+\resumeSubHeadingListEnd
 
-\end{changemargin}
+\resumeSubHeadingListEnd
 
-\section*{Education}
-\begin{changemargin}{\lmvalue}{\rmvalue}
+\section{Education}
+\resumeSubHeadingList
+\resumeSubheading
+{ITMO University}{}
+{M.S. in Digital control in modern techniques}{2016 -- 2018}
+\resumeSubheading
+{ITMO University}{}
+{B.S. in Control in technical systems}{2012 -- 2016}
+\resumeSubHeadingListEnd
 
-	\begin{minipage}[t]{0.47\linewidth}
-		\subsection*{Master's Degree \hfill {\color{gray}2016 – 2018}}
-		\href{https://en.itmo.ru/}{ITMO University}
-		\begin{itemize}
-			\item Program of Digital control in modern techniques
-			\item Diploma with Honors
-			\item GPA 4.8 of 5
-		\end{itemize}
-	\end{minipage}
-	\hfill%
-	\begin{minipage}[t]{0.48\linewidth}
-		\subsection*{Bachelor's Degree \hfill {\color{gray}2012 – 2016}}
-		\href{https://en.itmo.ru/}{ITMO University}
-		\begin{itemize}
-			\item Program of Control in technical systems
-			\item GPA 4.76 of 5
-		\end{itemize}
-	\end{minipage}
-	\subsection*{Certificates}
-	\begin{itemize}
-		\item \href{https://www.udemy.com/certificate/UC-996e9255-2d89-4db2-9f70-e77f060e30b8}{Fundamentals of Database Engineering} by Udemy {\color{gray}Oct~2024}
-		\item \href{https://www.coursera.org/account/accomplishments/certificate/JTS4UC77RMRH}{Learning how to learn} by Coursera {\color{gray}Aug~2023}
-		\item \href{https://levelup.gitlab.com/c/OQPvtAh7ScyFaSX04Cya0g}{GitLab 101} and \href{https://levelup.gitlab.com/c/rFApBMcWT66ZF-F4IPdlrQ}{GitLab 201} by GtiLab {\color{gray}Jun~2023}
-	\end{itemize}
-\end{changemargin}
+\section{Certifications}
+\resumeSubHeadingList
+\resumeItem{\textbullet\ \href{https://www.udemy.com/certificate/UC-996e9255-2d89-4db2-9f70-e77f060e30b8}{Fundamentals of Database Engineering} by Udemy}
+\resumeItem{\textbullet\ \href{https://www.coursera.org/account/accomplishments/certificate/JTS4UC77RMRH}{Learning how to learn} by Coursera}
+\resumeItem{\textbullet\ \href{https://levelup.gitlab.com/c/OQPvtAh7ScyFaSX04Cya0g}{GitLab 101} and \href{https://levelup.gitlab.com/c/rFApBMcWT66ZF-F4IPdlrQ}{GitLab 201} by GitLab}
+\resumeSubHeadingListEnd
+
 \end{document}
