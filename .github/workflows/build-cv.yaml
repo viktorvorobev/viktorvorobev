@@ -48,7 +48,7 @@ jobs:
           path: |
             Viktor_Vorobev_CV.pdf
       - name: Install uv
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' || github.event_name == 'schedule' }}
         uses: astral-sh/setup-uv@v7
       - name: Upload CV to Google Drive
         if: ${{ github.event_name == 'push' || github.event_name == 'schedule' }}
