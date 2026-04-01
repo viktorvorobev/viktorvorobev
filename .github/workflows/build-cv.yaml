@@ -16,7 +16,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository 
+      - name: Set up Git repository
         uses: actions/checkout@v6
       - name: Lint & Spell check
         uses: ChiefGokhlayeh/textidote-action@v5
@@ -36,7 +36,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v4
         with:
-          root_file: | 
+          root_file: |
             ./cv/Viktor_Vorobev_CV.tex
         env:
             TEXINPUTS: ".:./cv//:"
