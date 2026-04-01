@@ -26,7 +26,7 @@ jobs:
           args: --check en --dict en_US.dict
       - name: Upload TeXtidote report
         if: ${{ steps.lint.outputs.num_warnings != 0 }}
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
             name: textidote_report
             path: report.html
@@ -42,7 +42,7 @@ jobs:
             TEXINPUTS: ".:./cv//:"
       - name: Upload PDF file artifact to GitHub
         if: ${{ github.event_name != 'push' }}
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: Viktor Vorobev CV
           path: |
